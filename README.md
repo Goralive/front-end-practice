@@ -10,3 +10,8 @@ a - anchor element. Should be at the end of the element. Can be links to your do
 img - not have closing tags src and alt are important. Can be store as in internet or on disk.
 
 <!-- --> - comments :-)
+
+hr - line break
+br - line break element
+sup - superscript
+sub - subscript chemical formulas
