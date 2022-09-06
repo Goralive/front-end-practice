@@ -7,11 +7,11 @@ can be only one head and one body\
 `ol/ul` - order list un order lists. Can be nested list\
 `li` - elements in the lists\
 `a` - anchor element. Should be at the end of the element. Can be links to your doc\
-`img` - not have closing tags src and alt are important. Can be store as in internet or on disk. \
+`img` - not have closing tags src and alt are important. Can be store as in internet or on disk.
 
-`<!-- -->` - comments :-) \
+`<!-- -->` - comments :-)
 
 `hr` - line break\
 `br` - line break element\
 `sup` - superscript\
-`sub` - subscript chemical formulas\
+`sub` - subscript chemical formulas
