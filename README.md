@@ -1,4 +1,4 @@
-In progress
+In progress 45
 # Section one HTML
 
 `b` - bold text\
@@ -16,7 +16,7 @@ can be only one head and one body\
 `br` - line break element\
 `sup` - superscript\
 `sub` - subscript chemical formulas\
-`<` - this is reserved HTML. Should used entitycodes name or number\
+`<` - this is reserved HTML. Should used entitycodes name or number
 
 ### Semantic markup
 `main` `header` `section` `nav` `footer` - behaves like div. Using for crawels.
@@ -27,14 +27,18 @@ Using for screen readers. More readable for developers.\
 `article` - block articles. Reusable. Should be heading in it.\
 `aside` - color boxes. Bonus content.\
 `time` - machine readable time code\
-`figure` - ilustrations
-
+`figure` - ilustrations\
 
 ### Tables structure
 `table` - table of the content\
 `td` - single cell of the table that contains data.\
 `tr` - table row to group data in rows.\
 `th` - define a header of the column.\
-
-`thead` - multiple rows can be in the the headers can be wrap.`tbody` - body of the table.
+`rowspan` - fill the number of cells in the table.\
+`colspan` - create two columns\
+`thead` - multiple rows can be in the the headers can be wrap.\
+`tbody` - body of the table.\
 `tfooter` - for overall calculations can be used
+
+### Forms
+`form` - when submitting the form http request will be send

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/action">
+      <p>
+        <label for="username">Enter username:</label>
+        <input type="text" placeholder="username" name="u" id="username" />
+      </p>
+      <p>
+        <label for="number-input">Number:</label>
+        <input
+          type="number"
+          placeholder="enter a number"
+          name="n"
+          id="number-input"
+        />
+      </p>
+      <p>
+        <label for="color-picker">Enter a color:</label>
+        <input type="color" id="color-picker" />
+      </p>
+      <p>
+        <input type="checkbox" id="awesome" />
+        <label for="awesome">Check</label>
+      </p>
+      <button>Submit</button>
+    </form>
+    <form action="https://www.reddit.com/search" method="get">
+      <label for="reddit-search-input">Look for something on reddit:</label>
+      <input
+        type="text"
+        name="q"
+        id="reddit-search-input"
+        placeholder="Search in reddit..."
+      />
+      <button>Let's search for some data on reddit</button>
+    </form>
+    <form action="https://google.com/search" method="get">
+      <label for="google-search-input">Search on google</label>
+      <input
+        type="text"
+        name="q"
+        id="google-search-input"
+        placeholder="Search on google"
+      />
+      <button>Do google search</button>
+    </form>
+    <h2>More Inputs</h2>
+    <form action="/blazingly-fast-radiobtn">
+      <input
+        type="checkbox"
+        name="awesome-checkbox"
+        id="awesome-checkbox"
+        value="Awesome Bob"
+      />
+      <label for="awesome-checkbox">Awesome?</label>
+      <p>
+        <label for="s">S</label>
+        <input type="radio" name="radio-btn" value="S" id="s" />
+        <label for="m">M</label>
+        <input type="radio" name="radio-btn" value="M" id="m" />
+        <label for="l">L</label>
+        <input type="radio" name="radio-btn" value="L" id="l" />
+        <label for="xl">XL</label>
+        <input type="radio" name="radio-btn" value="XL" id="xl" />
+      </p>
+      <p>
+        <label for="meal">Please select the meal:</label>
+        <select name="meal" id="meal">
+          <option value="fish">Fish</option>
+          <option value="veg">Vegetables</option>
+          <option value="meat">Meat</option>
+        </select>
+      </p>
+      <p>
+        <label for="range-of">Select range:</label>
+        <input
+          type="range"
+          name="selected-range"
+          id="range-of"
+          value="75"
+          min="0"
+          max="100"
+        />
+      </p>
+      <p>
+        <label for="special-request">Any special request</label>
+        <br />
+        <textarea
+          name="special-request"
+          id="special-request"
+          cols="15"
+          rows="10"
+          placeholder="Leave special request here"
+        ></textarea>
+      </p>
+      <button type="submit">Submit radio-btn</button>
+    </form>
+  </body>
+</html>
