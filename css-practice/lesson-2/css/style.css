@@ -1,0 +1,17 @@
+h1 {
+    text-align: right;
+    width: 75%;
+    font-weight: lighter;
+    text-decoration: #F71837 wavy underline;
+    letter-spacing: 20px;
+    font-family: fantasy;
+}
+a {
+    text-decoration: none;
+    color: #777;
+    font-size: 25px;
+}
+
+p {
+    line-height: 2em;
+}

@@ -1,0 +1,21 @@
+button {
+    font-size: 30px;
+}
+
+h1, h2 {
+    color: #1d3557
+}
+
+#sign-up {
+    background-color: #457b9d;
+}
+
+span {
+    color: #ffb703;
+}
+
+.tag {
+    background-color: red;
+    color: aliceblue;
+    font-size: 15px;
+}
