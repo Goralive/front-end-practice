@@ -9,3 +9,13 @@ h1, h2 {
 #sign-up {
     background-color: #457b9d;
 }
+
+span {
+    color: #ffb703;
+}
+
+.tag {
+    background-color: red;
+    color: aliceblue;
+    font-size: 15px;
+}
