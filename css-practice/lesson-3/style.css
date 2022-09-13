@@ -19,3 +19,37 @@ span {
     color: aliceblue;
     font-size: 15px;
 }
+
+.post a {
+    color: #ffb703;
+    text-decoration: none;
+}
+
+ul a {
+    color: red;
+}
+
+input + button {
+    background-color: orange;
+}
+
+input[type='password'] {
+    color: yellow;
+}
+
+a[href*='pup'] {
+    color: aqua;
+}
+
+.post button:hover {
+    background-color: red;
+    color:aliceblue
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: green;
+}

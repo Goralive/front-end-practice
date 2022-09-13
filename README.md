@@ -65,5 +65,16 @@ A lot of different properties.
 `font-size` - relative `em rem vh vw %` absolute `px pt cm in mm`
 
 ### Selectors
-`*` - select everything
-`button` - select every button
+`*` - select everything\
+`button` - select every button\
+adjacent selector - select after another `h2 + button`\
+direct chind - `h2 > button` one level down\
+attribute selector - inside attribute\
+
+### Pseudo classes
+`:hover` - differnet representation on hover\
+`:active` - click on buttons\
+`:checked` - checked checkbox\
+`nth-of-type()` - 3 only the third one element. 3n each 3d element
+
+### Pseudo element
