@@ -53,3 +53,26 @@ a[href*='pup'] {
 .post button:active {
     background-color: green;
 }
+
+h2::first-letter {
+    background-color: #ffb703;
+    font-size: 25px;
+}
+
+p::first-line {
+    background-color: #457b9d;
+}
+
+p::selection {
+    background-color: aqua;
+}
+
+a::before {
+    content: '<<';
+    background-color: #ffb703;
+}
+
+a::after {
+    content: '>>';
+    background-color: #457b9d;
+}

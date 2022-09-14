@@ -52,7 +52,8 @@ Using for screen readers. More readable for developers.\
 `required` - attribute for validations.\
 
 # CSS
-A lot of different properties.
+A lot of different properties. CSS is cascade language. So the order valeus. Read from top to down
+Specificity: more specific selectors wins! ID > Class > element
 `color` - represet the color of the text\
 `h2` takes all the space for the background\
 `;` - end of line\
@@ -78,3 +79,8 @@ attribute selector - inside attribute\
 `nth-of-type()` - 3 only the third one element. 3n each 3d element
 
 ### Pseudo element
+`::first-letter` - set the first letter of the element\
+`::first-line` - select the line\
+`::selection` - can be done on the text. Select backgound color\
+`::after` - add after element the value\
+`::before` - add after element value if use `content` or you can adjust some values\
