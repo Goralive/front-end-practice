@@ -49,7 +49,7 @@ Using for screen readers. More readable for developers.\
 `name` - for forms is crusual if you want to send the parameters in http requests.\
 `value` - need for radio buttons to submit correct data.\
 `select` work together with `option` \
-`required` - attribute for validations.\
+`required` - attribute for validations.
 
 # CSS
 A lot of different properties. CSS is cascade language. So the order valeus. Read from top to down
@@ -70,7 +70,7 @@ Specificity: more specific selectors wins! ID > Class > element
 `button` - select every button\
 adjacent selector - select after another `h2 + button`\
 direct chind - `h2 > button` one level down\
-attribute selector - inside attribute\
+attribute selector - inside attribute
 
 ### Pseudo classes
 `:hover` - differnet representation on hover\
@@ -83,4 +83,4 @@ attribute selector - inside attribute\
 `::first-line` - select the line\
 `::selection` - can be done on the text. Select backgound color\
 `::after` - add after element the value\
-`::before` - add after element value if use `content` or you can adjust some values\
+`::before` - add after element value if use `content` or you can adjust some values
