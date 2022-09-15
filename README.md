@@ -84,3 +84,6 @@ attribute selector - inside attribute
 `::selection` - can be done on the text. Select backgound color\
 `::after` - add after element the value\
 `::before` - add after element value if use `content` or you can adjust some values
+
+Not used inline styles and important\
+color can be inherited.
