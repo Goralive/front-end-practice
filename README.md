@@ -87,3 +87,10 @@ attribute selector - inside attribute
 
 Not used inline styles and important\
 color can be inherited.
+
+
+## Box Model
+Everething in css is a box.
+`margin` -
+`padding` -
+`border` -
