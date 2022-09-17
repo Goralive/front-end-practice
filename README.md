@@ -93,4 +93,6 @@ color can be inherited.
 Everething in css is a box.
 `margin` -
 `padding` -
-`border` -
+`border` - width, color, style. Box-sizing can be the same size as the box `border-box`\
+`border` - width | style | color\
+`border-radius` - make borders rounded
