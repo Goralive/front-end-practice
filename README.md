@@ -90,9 +90,14 @@ color can be inherited.
 
 
 ## Box Model
-Everething in css is a box.
-`margin` -
-`padding` - space between the content and the border element. Green stuff in dev tools. You can set padding Top | Right | Bottom | Left |\
+Everething in css is a box.\
+Top | Right | Bottom | Left \
+`margin` - add outside spacing on the border of the box.\
+`padding` - space between the content and the border element. Green stuff in dev tools. You can set padding\
 `border` - width, color, style. Box-sizing can be the same size as the box `border-box`\
 `border` - width | style | color\
 `border-radius` - make borders rounded
+### Display properties
+`inline`
+`block`
+`inline-block`
