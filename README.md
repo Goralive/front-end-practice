@@ -1,5 +1,5 @@
 # Learning Notes
-In progress 70
+In progress 87
 # Section one HTML
 
 `b` - bold text\
@@ -64,6 +64,12 @@ Specificity: more specific selectors wins! ID > Class > element
 `line-height` - controls the line height\
 `letter-spacing` - control the spacing between the letters\
 `font-size` - relative `em rem vh vw %` absolute `px pt cm in mm`
+### CSS units
+#### Relative units
+`%` - 50% = half of the size. Half of the with of the parent
+`em`
+`rem`
+#### Absolute units
 
 ### Selectors
 `*` - select everything\
@@ -98,6 +104,7 @@ Top | Right | Bottom | Left \
 `border` - width | style | color\
 `border-radius` - make borders rounded
 ### Display properties
-`inline`
-`block`
-`inline-block`
+`inline` - get not all the width of the entire line. Example is span
+`block` - get the width of the entire line. Example is h1
+`inline-block` - behaves like inline element except Width and height are respected
+`none` - hide element
