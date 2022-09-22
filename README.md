@@ -66,8 +66,8 @@ Specificity: more specific selectors wins! ID > Class > element
 `font-size` - relative `em rem vh vw %` absolute `px pt cm in mm`
 ### CSS units
 #### Relative units
-`%` - 50% = half of the size. Half of the with of the parent
-`em`
+`%` - 50% = half of the size. Half of the with of the parent\
+`em` - 2em = 2 * font size of the parrent element. If using with elements (like margin) it's takeing the size of the element itself.
 `rem`
 #### Absolute units
 
