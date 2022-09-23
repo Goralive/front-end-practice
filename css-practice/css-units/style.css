@@ -16,7 +16,7 @@ h1 {
     line-height: 200%;
 }
 
-article {
+#em article {
     font-size: 20px;
 }
 
@@ -35,4 +35,12 @@ h3 {
 
 p {
     font-size: 0.5em;
+}
+
+ul {
+ font-size: 1.5em;
+}
+
+#em li {
+    font-size: 1em;
 }

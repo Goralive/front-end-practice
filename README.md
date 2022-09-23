@@ -67,9 +67,8 @@ Specificity: more specific selectors wins! ID > Class > element
 ### CSS units
 #### Relative units
 `%` - 50% = half of the size. Half of the with of the parent\
-`em` - 2em = 2 * font size of the parrent element. If using with elements (like margin) it's takeing the size of the element itself.
-`rem`
-#### Absolute units
+`em` - 2em = 2 * font size of the parrent element. If using with elements (like margin) it's takeing the size of the element itself. Note: not use in nested elements.\
+`rem` - get element size from the root element. Get size from `html` element.
 
 ### Selectors
 `*` - select everything\
@@ -94,7 +93,6 @@ attribute selector - inside attribute
 Not used inline styles and important\
 color can be inherited.
 
-
 ## Box Model
 Everething in css is a box.\
 Top | Right | Bottom | Left \
@@ -108,3 +106,4 @@ Top | Right | Bottom | Left \
 `block` - get the width of the entire line. Example is h1
 `inline-block` - behaves like inline element except Width and height are respected
 `none` - hide element
+### Transitions
