@@ -1,3 +1,7 @@
+html {
+    font-size: 10px;
+}
+
 section {
     background-color: #d6ccc2;
     height: 800px;
@@ -42,5 +46,9 @@ ul {
 }
 
 #em li {
-    font-size: 1em;
+    font-size: 2em;
+}
+
+#rem li {
+    font-size: 2rem;
 }

@@ -106,4 +106,10 @@ Top | Right | Bottom | Left \
 `block` - get the width of the entire line. Example is h1
 `inline-block` - behaves like inline element except Width and height are respected
 `none` - hide element
+### Opacity + Alpha channels
+ `opacity` - make the element not visible. Transparent
+ `alpha channel` - work only on one property. Other elements are not affected.
+### Position
+
+
 ### Transitions
