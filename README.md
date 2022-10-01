@@ -1,5 +1,5 @@
 # Learning Notes
-In progress 87
+In progress 93
 # Section one HTML
 
 `b` - bold text\
@@ -102,14 +102,21 @@ Top | Right | Bottom | Left \
 `border` - width | style | color\
 `border-radius` - make borders rounded
 ### Display properties
-`inline` - get not all the width of the entire line. Example is span
-`block` - get the width of the entire line. Example is h1
-`inline-block` - behaves like inline element except Width and height are respected
+`inline` - get not all the width of the entire line. Example is span\
+`block` - get the width of the entire line. Example is h1\
+`inline-block` - behaves like inline element except Width and height are respected\
 `none` - hide element
 ### Opacity + Alpha channels
- `opacity` - make the element not visible. Transparent
+ `opacity` - make the element not visible. Transparent\
  `alpha channel` - work only on one property. Other elements are not affected.
 ### Position
-
+Property sets how an element is positioned in a document. Top, right, bottom, left\
+`static` - element position with respect to position. Can't influence position\
+`relative` - position the element relative to another elements\
+`absolute` - element is removed from normal document flow. No space is created for the element in the page layout. Position can be taken from parent\
+`fixed` - the element will stay at the same place. Like absolute positioning but doesn't affects by parent\
+`sticky` - position element. Element will go down along with container.
 
 ### Transitions
+`transition` - looks fun. Transition properties in defined order. You can specify property name, duration, timing function, delay\
+`transition-timing-function` - `easy-in`
