@@ -120,3 +120,5 @@ Property sets how an element is positioned in a document. Top, right, bottom, le
 ### Transitions
 `transition` - looks fun. Transition properties in defined order. You can specify property name, duration, timing function, delay\
 `transition-timing-function` - `easy-in`
+
+### Transform
