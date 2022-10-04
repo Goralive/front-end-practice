@@ -120,3 +120,9 @@ Property sets how an element is positioned in a document. Top, right, bottom, le
 ### Transitions
 `transition` - looks fun. Transition properties in defined order. You can specify property name, duration, timing function, delay\
 `transition-timing-function` - `easy-in`
+
+### Transform
+`transform` - rotate. You can rotate elements. `transform-origin` from where to start transform\
+A lot of stuff for transformation. `Scale` can be scale on x and y\
+`translate` - move thing around the page. Can be influence only X or Y\
+Transformation apply for all content elements\
