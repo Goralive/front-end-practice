@@ -122,3 +122,7 @@ Property sets how an element is positioned in a document. Top, right, bottom, le
 `transition-timing-function` - `easy-in`
 
 ### Transform
+`transform` - rotate. You can rotate elements. `transform-origin` from where to start transform\
+A lot of stuff for transformation. `Scale` can be scale on x and y\
+`translate` - move thing around the page. Can be influence only X or Y\
+Transformation apply for all content elements\
