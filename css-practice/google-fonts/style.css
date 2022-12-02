@@ -1,0 +1,17 @@
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+p, h2 {
+   font-family: 'Nerko One', cursive;
+}
