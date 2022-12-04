@@ -147,3 +147,9 @@ In flex bos there is two axis main and cross.
 `justify-content` - move elements in container (start,end,center, space-between, around)
 `flex-wrap` - elements can align on multiple lines if set value to wrap
 `align-items` - working with y horizonal
+
+### Transform
+`transform` - rotate. You can rotate elements. `transform-origin` from where to start transform\
+A lot of stuff for transformation. `Scale` can be scale on x and y\
+`translate` - move thing around the page. Can be influence only X or Y\
+Transformation apply for all content elements\
