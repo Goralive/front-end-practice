@@ -1,4 +1,4 @@
-# Learning Notes
+: Learning Notes
 
 # Section one HTML
 
