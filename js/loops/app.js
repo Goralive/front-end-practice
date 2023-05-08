@@ -11,3 +11,10 @@ for (let i = 0; i <= 20; i += 2) {
 for (let i = 100; i >= 0; i -= 10) {
   console.log(i);
 }
+
+let i = 0
+
+while (i <= 10) {
+  console.log(i, "Hello world")
+  i++;
+}
