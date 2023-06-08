@@ -1,3 +1,4 @@
+let arr = ["full", "stack", "developer", "my", "goal"];
 for (let i = 1; i <= 10; i++) {
   console.log(`Hello from console -> times ${i}`);
 }
@@ -12,9 +13,13 @@ for (let i = 100; i >= 0; i -= 10) {
   console.log(i);
 }
 
-let i = 0
+let i = 0;
 
 while (i <= 10) {
-  console.log(i, "Hello world")
+  console.log(i, "Hello world");
   i++;
+}
+
+for (let elem of arr) {
+  console.log(`Elements in the array: ${elem}`);
 }
