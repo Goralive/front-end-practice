@@ -1,42 +1,32 @@
-let userInput;
-let task;
-let todoList = [];
+let userInput = prompt("What you like to do?").toLowerCase();
+const todoList = [];
 
-while (userInput !== "new" || "list" || "delete" || "quit") {
-  userInput = prompt("What you like to do?").toLowerCase();
-
+while (userInput !== "quit") {
   if (userInput === "new") {
-    task = prompt("New Task: ");
+    const task = prompt("New Task: ");
     todoList.push(task);
     console.log(
       `${task} added to the list. Size of todo list is ${todoList.length}`
     );
-  }
-
-  if (userInput === "list") {
+  } else if (userInput === "list") {
     if (todoList.length > 0) {
       console.log("**************");
       for (const [index, elem] of todoList.entries()) {
-        console.log(`${index + 1}. ${elem}`);
+        console.log(`${index}. ${elem}`);
       }
       console.log("**************");
     } else {
       console.log("The todo list is empty");
     }
-  }
-
-  if (userInput === "delete") {
-    let deleteTask = prompt("Enter the index of item to delete");
-    deleteTask--;
+  } else if (userInput === "delete") {
+    const deleteTask = prompt("Enter the index of item to delete");
     if (deleteTask <= 0 || typeof todoList[deleteTask] !== "undefined") {
-      console.log(`${todoList[deleteTask]} deleted from the list`);
-      todoList.splice(deleteTask, 1);
+      const deleted = todoList.splice(deleteTask, 1);
+      console.log(`${deleted[0]} deleted from the list`);
     } else {
       console.log(`"${deleteTask}" isn't present in the list`);
     }
   }
-  if (userInput === "quit") {
-    console.log("Quiting...");
-    break;
-  }
+  userInput = prompt("What you like to do?").toLowerCase();
 }
+console.log("Quiting...");
