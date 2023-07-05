@@ -149,7 +149,31 @@ In flex bos there is two axis main and cross.
 `align-items` - working with y horizonal
 
 ### Transform
+
 `transform` - rotate. You can rotate elements. `transform-origin` from where to start transform\
 A lot of stuff for transformation. `Scale` can be scale on x and y\
 `translate` - move thing around the page. Can be influence only X or Y\
 Transformation apply for all content elements\
+
+## JS
+
+### Function scope
+
+Can be inner functions and scopes are in the block
+
+```js
+function bob() {
+  let hello = "Hello world";
+  function print() {
+    console.log(hello);
+  }
+}
+```
+
+Function expression
+
+```js
+const add = function (x, y) {
+  return x + y;
+};
+```
