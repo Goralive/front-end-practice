@@ -23,3 +23,13 @@ while (i <= 10) {
 for (let elem of arr) {
   console.log(`Elements in the array: ${elem}`);
 }
+const nums = [10, 300, 22, 33, 55];
+
+const minNum = nums.reduce((lowest, current) => {
+  if (lowest < current) {
+    return lowest;
+  }
+  return current;
+});
+
+console.log(minNum);
