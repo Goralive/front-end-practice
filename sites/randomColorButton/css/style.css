@@ -1,0 +1,8 @@
+.colorBtn {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  border: solid;
+}
