@@ -9,5 +9,5 @@ catForm.addEventListener("submit", (event) => {
   const listElem = document.createElement("li");
   listElem.innerText = catName;
 
-  list.appendChild(listElem);
+  list.append(listElem);
 });
