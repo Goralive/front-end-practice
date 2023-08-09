@@ -6,12 +6,17 @@ form.addEventListener("submit", (event) => {
 
   const usernameInput = form.username;
   const tweetInput = form.tweet;
+  addTweet(usernameInput, tweetInput);
 
+  usernameInput.value = "";
+  tweetInput.value = "";
+});
+
+const addTweet = (usernameElement, tweetElement) => {
   const tweet = document.createElement("li");
   const highlight = document.createElement("b");
-  highlight.innerText = usernameInput.value;
+  highlight.innerText = usernameElement.value;
   tweet.append(highlight);
-  tweet.append(`: posted tweet ${tweetInput.value} - `);
-
+  tweet.append(`: posted tweet -> ${tweetElement.value}  `);
   listOfTweets.append(tweet);
-});
+};
