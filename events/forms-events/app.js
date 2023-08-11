@@ -1,5 +1,6 @@
 const form = document.querySelector("#tweetForm");
 const listOfTweets = document.querySelector("#tweets");
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   console.log("Submited");
@@ -20,3 +21,7 @@ const addTweet = (usernameElement, tweetElement) => {
   tweet.append(`: posted tweet -> ${tweetElement.value}  `);
   listOfTweets.append(tweet);
 };
+
+listOfTweets.addEventListener("click", (event) => {
+  event.target.nodeName === "LI" && event.target.remove();
+});
