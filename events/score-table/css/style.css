@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+
+div.imgContainer {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  width: 450px;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+div.rulesContainer label {
+  font-weight: bold;
+}
+
+div.rulesContainer,
+p {
+  margin: 0;
+  border: 2px groove grey;
+  padding-left: 1.5rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+#maxScore {
+  margin: 1em;
+}
+
+div#buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#playerOneBtn,
+#playerTwoBtn,
+#resetBtn {
+  height: 3.5em;
+  color: white;
+  width: calc(100% / 3);
+}
+
+#playerOneBtn {
+  background-color: green;
+}
+#playerTwoBtn {
+  background-color: blue;
+}
+#resetBtn {
+  background-color: red;
+}
