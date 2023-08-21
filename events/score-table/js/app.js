@@ -14,11 +14,10 @@ let userTwoScore = 0;
 
 playerOne.addEventListener("click", (event) => {
   event.preventDefault();
+  userOneScore++;
+  userOneScoreSelector.textContent = userOneScore;
   if (isFinished()) {
-    alert("Game finished. Reset the score!");
-  } else {
-    userOneScore++;
-    userOneScoreSelector.textContent = userOneScore;
+    finishGameScreen();
   }
 });
 
@@ -26,6 +25,9 @@ playerTwo.addEventListener("click", (event) => {
   event.preventDefault();
   userTwoScore++;
   userTwoScoreSelector.textContent = userTwoScore;
+  if (isFinished()) {
+    finishGameScreen();
+  }
 });
 
 reset.addEventListener("click", (event) => {
@@ -42,6 +44,8 @@ maxScoreSelector.addEventListener("change", () => {
 function resetScoreFor(...selectors) {
   for (let elem of selectors) {
     elem.textContent = 0;
+    elem.classList.remove("loser");
+    elem.classList.remove("winner");
   }
 }
 
@@ -56,3 +60,14 @@ const isFinished = () => {
   );
   return result;
 };
+
+function finishGameScreen() {
+  if (userOneScore < userTwoScore) {
+    userTwoScoreSelector.classList.add("winner");
+    userOneScoreSelector.classList.add("loser");
+  } else {
+    userTwoScoreSelector.classList.add("loser");
+    userOneScoreSelector.classList.add("winner");
+  }
+  alert("Game finished. Reset the score!");
+}
