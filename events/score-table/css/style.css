@@ -6,6 +6,14 @@ body {
   left: 35%;
 }
 
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
+}
+
 div.imgContainer {
   display: flex;
   justify-content: center;
