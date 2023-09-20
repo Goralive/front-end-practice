@@ -1,74 +1,79 @@
-const p1Btn = document.querySelector("#p1Button");
+const playerOne = {
+  scores: 0,
+  buttonSelector: document.querySelector("#p1Button"),
+  displaySelector: document.querySelector("#p1Score"),
+};
+
+const playerTwo = {
+  scores: 0,
+  buttonSelector: document.querySelector("#p2Button"),
+  displaySelector: document.querySelector("#p2Score"),
+};
+
+const p1Btn = document.querySelector("h1");
 const p2Btn = document.querySelector("#p2Button");
 const resetBtn = document.querySelector("#reset");
-const p1Display = document.querySelector("#p1Score");
+const p1Display = document.querySelector("h1");
 const p2Display = document.querySelector("#p2Score");
 const playToSelect = document.querySelector("#playto");
 
 let winningScore = 3;
 let isGameOver = false;
 
-let p1Score = 0;
-let p2Score = 0;
-
-p1Btn.addEventListener("click", () => {
+function updateScore(player) {
   if (!isGameOver) {
-    if (p1Score !== winningScore) {
-      p1Score += 1;
-      isOver(p1Score);
-      p1Display.textContent = p1Score;
+    if (player.scores !== winningScore) {
+      player.scores += 1;
+      console.log(`player score is ${player.scores}`);
+      isOver(player.scores);
+      player.displaySelector.textContent = player.scores;
     }
   }
+}
+
+playerOne.buttonSelector.addEventListener("click", () => {
+  updateScore(playerOne);
 });
 
-p2Btn.addEventListener("click", () => {
-  if (!isGameOver) {
-    if (p2Score !== winningScore) {
-      p2Score += 1;
-      isOver(p2Score);
-      p2Display.textContent = p2Score;
-    }
-  }
+playerTwo.buttonSelector.addEventListener("click", () => {
+  updateScore(playerTwo);
 });
 
 resetBtn.addEventListener("click", () => {
-  resetGame();
+  resetGame(playerOne, playerTwo);
 });
 
 playToSelect.addEventListener("change", () => {
   winningScore = parseInt(playToSelect.value);
   console.log(`Score is ${winningScore}`);
-  resetGame();
+  resetGame(playerOne, playerTwo);
 });
 
 function isOver(score) {
   if (score === winningScore) {
     isGameOver = true;
-    highlightGameResult();
-    p1Btn.disabled = true;
-    p2Btn.disabled = true;
+    highlightGameResult(playerOne, playerTwo);
+    playerOne.buttonSelector.disabled = true;
+    playerTwo.buttonSelector.disabled = true;
   }
 }
 
-function resetGame() {
-  p1Score = 0;
-  p2Score = 0;
-
-  p1Display.textContent = p1Score;
-  p2Display.textContent = p2Score;
+function resetGame(...players) {
+  for (let p of players) {
+    p.scores = 0;
+    p.displaySelector.textContent = 0;
+    p.displaySelector.classList.remove("has-text-success", "has-text-danger");
+    p.buttonSelector.disabled = false;
+  }
   isGameOver = false;
-  p1Display.classList.remove("has-text-success", "has-text-danger");
-  p2Display.classList.remove("has-text-success", "has-text-danger");
-  p1Btn.disabled = false;
-  p2Btn.disabled = false;
 }
 
-function highlightGameResult() {
-  if (p1Score > p2Score) {
-    p1Display.classList.add("has-text-success");
-    p2Display.classList.add("has-text-danger");
+function highlightGameResult(p1, p2) {
+  if (parseInt(p1.scores) > parseInt(p2.scores)) {
+    p1.displaySelector.classList.add("has-text-success");
+    p2.displaySelector.classList.add("has-text-danger");
   } else {
-    p1Display.classList.add("has-text-danger");
-    p2Display.classList.add("has-text-success");
+    p1.displaySelector.classList.add("has-text-danger");
+    p2.displaySelector.classList.add("has-text-success");
   }
 }
