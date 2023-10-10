@@ -1,4 +1,4 @@
-: Learning Notes
+Learning Notes
 
 # Section one HTML
 
@@ -177,3 +177,8 @@ const add = function (x, y) {
   return x + y;
 };
 ```
+
+### Call stack
+
+Mechanism to check what was called. Used data structure stack.
+Adding always on the top of the stack. When get the value is returned deleted from the stack.
