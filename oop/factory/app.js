@@ -49,5 +49,3 @@ class Color {
 }
 const c1 = new Color(255, 23, 33, "Tomato");
 const c2 = new Color(0, 0, 0, "Black");
-
-("hsl(300,80%,40%)");
