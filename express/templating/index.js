@@ -2,11 +2,12 @@ import express from "express";
 const app = express();
 import path from "node:path";
 const __dirname = path.resolve();
+import redditData from "./data.json" assert { type: "json" };
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
   res.render("home");
 });
 
@@ -17,7 +18,12 @@ app.get("/random", (_req, resp) => {
 
 app.get("/r/:subreddit", (req, resp) => {
   const { subreddit } = req.params;
-  resp.render("subreddit", { subreddit });
+  const templateData = redditData[subreddit];
+  if (templateData) {
+    resp.render("subreddit", { ...templateData });
+  } else {
+    resp.render("notfound", { subreddit });
+  }
 });
 
 app.listen("3001", () => {
