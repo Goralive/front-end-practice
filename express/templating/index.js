@@ -4,6 +4,7 @@ import path from "node:path";
 const __dirname = path.resolve();
 import redditData from "./data.json" assert { type: "json" };
 
+app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
