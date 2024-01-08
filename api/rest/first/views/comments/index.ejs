@@ -10,7 +10,10 @@
     <div>
       <ul>
   <% for(let c of inMemoryDb) { %>
-<li><%= c.comment %> - <b><%=c.username %></b></li>
+<li><%= c.comment %> - <b><%=c.username %></b>        </li>
+
+          <a href="/comments/<%= c.id %>">Details</a>
+          <a href="/comments/<%= c.id %>/edit">Edit</a>
  <% } %>
       </ul>
     </div>
