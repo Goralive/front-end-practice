@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Edit form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Edit</h1>
+    <form method="post" action="/comments/<%= comment.id %>?_method=PATCH">
+    <textarea name="comment" cols="30" rows="10">
+      <%= comment.comment %>
+    </textarea>
+      <button type="submit">Save</button>
+    </form>
+    <br>
+    <form method="post" action="/comments/<%= comment.id %>?_method=DELETE">
+      <button >Delete</button>
+    </form>
+    <br>
+    <a href="/comments">Back to index</a>
+  </body>
+</html>
