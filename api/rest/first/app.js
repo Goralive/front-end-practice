@@ -47,13 +47,11 @@ app.get("/comments/new", (_req, res) => {
 
 app.post("/comments", (req, res) => {
   let { username, comment } = req.body;
-  let obj = {
+  inMemoryDb.push({
     id: uuid(),
     username: username,
     comment: comment,
-  };
-  inMemoryDb.push(obj);
-
+  });
   res.redirect(`/comments/${obj.id}`);
 });
 
