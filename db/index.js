@@ -25,5 +25,4 @@ const matrix = new Movie({
   rating: "R",
   show: false,
 });
-
 matrix.save();
