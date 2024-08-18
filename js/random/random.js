@@ -6,10 +6,10 @@ logArray(movies);
 console.log(movies[0]);
 
 function logArray(arr) {
-  console.log('logging array...')
+  console.log('logging array...');
   for (const a of arr) {
-    console.log(` - ${a}`)
+    console.log(` - ${a}`);
   }
-  console.log('---')
+  console.log('---');
 }
 
